@@ -1,1 +1,1 @@
-# uva-100 uva solution with java
+# my uva solution reposotory
