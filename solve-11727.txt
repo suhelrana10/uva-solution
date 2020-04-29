@@ -1,0 +1,28 @@
+import java.util.Scanner;   
+import java.util.Arrays;
+public class Main{
+
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int count=sc.nextInt();
+long []data=new long[3];
+for(byte i=1;i<=count;i++)
+{
+ data[0]=sc.nextLong();
+  data[1]=sc.nextLong();
+   data[2]=sc.nextLong();
+   
+   Arrays.sort(data);
+   
+   System.out.println("Case "+i+":"+" "+data[1]);
+ 
+ 
+ 
+}
+}
+}
+
+  
+  
+  
