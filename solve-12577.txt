@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+      int i=0;
+      String type;
+      Scanner sc=new Scanner(System.in);
+while(!(type =sc.nextLine()).equals("*")) 
+{
+   i++;
+if(type.equals("Hajj"))
+  System.out.println("Case "+i+":"+" Hajj-e-Akbar");
+else
+  System.out.println("Case "+i+":"+" Hajj-e-Asghar");
+
+}
+       
+    }
+}
