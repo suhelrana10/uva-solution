@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      
+    Scanner sc=new Scanner(System.in);
+    while(sc.hasNext()){
+   
+                          long i=sc.nextInt();
+                          long j=sc.nextInt();
+                          long min=i<=j?i:j;
+                          long max=i<=j?j:i;
+                          long maxcounter=1;
+                          long counter;
+                          
+                           for(long a=min;a<=max;a++)
+                           {
+                            long copy=a;
+                             for(counter=1;copy!=1;counter++)
+                             {
+                             if(copy%2==0)
+                               copy=copy/2;
+                             else
+                               copy=copy*3+1;
+                             }
+                             if(maxcounter < counter)
+                               maxcounter=counter;
+                           
+                           }
+                          
+                          System.out.println(i+" "+j+" "+maxcounter);
+                      }
+    
+    }
+
+
+}
+        
