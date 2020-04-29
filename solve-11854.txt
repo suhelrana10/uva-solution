@@ -1,0 +1,31 @@
+import java.util.Scanner;   
+import java.util.Arrays;
+public class Main{
+
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+
+while(true)
+ {
+  int[]data=new int[3];;
+ data[0]=sc.nextInt();
+ data[1]=sc.nextInt();
+ data[2]=sc.nextInt();
+if(data[0]==0 &&data[1]==0 &&data[2]==0 )
+  break;
+ Arrays.sort(data);
+ long r=data[0]*data[0]+data[1]*data[1];
+ long l=data[2]*data[2];
+ if(r==l)
+   System.out.println("right");
+ else
+   System.out.println("wrong");
+   
+
+}
+}
+}
+  
+  
+  
