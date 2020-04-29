@@ -1,0 +1,27 @@
+import java.util.Scanner;   
+import java.util.Arrays;
+public class Ok{
+
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int count=sc.nextInt();
+long a;
+for(byte i=1;i<=count;i++)
+{
+ a=sc.nextLong();
+ a*=63;
+ a+=7492;
+ a*=235;
+ a/=47;
+ a-=498;
+ a/=10;
+ a%=10;
+ System.out.println(Math.abs(a));
+}
+}
+}
+
+  
+  
+  
