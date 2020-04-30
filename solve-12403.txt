@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+      
+      
+      Scanner sc=new Scanner(System.in);
+
+     byte count=sc.nextByte();
+     
+for(byte i=0;i< count;i++)
+{
+ byte stopages=sc.nextByte();
+ int[]data=new int[stopages];
+ for(byte j=0;j<stopages;j++)
+ {
+ data[j]=sc.nextInt();
+ 
+ 
+ }
+ 
+   Arrays.sort(data); 
+  int distance=(data[stopages-1]-data[0])*2;
+  System.out.println(distance);
+    
+    }
+
+}
+       
+    }
+
