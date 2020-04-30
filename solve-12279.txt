@@ -1,0 +1,30 @@
+import java.util.Scanner;   
+import java.util.Arrays;
+public class Main{
+
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+byte count=sc.nextByte();
+
+for(byte i=1;i<=count;i++)
+{
+ 
+   byte a=sc.nextByte();
+   byte b=sc.nextByte();
+   int sum=0;
+   for(int j=a;j<=b;j++)
+   {
+     if(j%2!=0)
+   sum+=j;
+   }
+ System.out.println("Case "+i+":"+" "+sum);
+ 
+ 
+ }
+}
+}
+
+  
+  
+  
