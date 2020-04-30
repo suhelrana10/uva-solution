@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  
+  
+int count=sc.nextInt();
+int i;
+
+for(i=1;i<=count;i++)
+  
+  {
+  int a=0;
+ int racer=sc.nextInt();
+ for(int j=0;j<racer;j++)
+ {
+ int speed=sc.nextInt();
+ if(a<speed)
+   a=speed;
+ 
+ }
+ System.out.println("Case "+i+": "+a);  
+  
+  }
+
+
+}
+}
+
