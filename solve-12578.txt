@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  
+  int count=sc.nextInt();
+ 
+  for(int i=1;i<=count;i++)
+  {
+   int length=sc.nextInt();
+   double width=(double)((.6*length));
+   double radious=(double)((.2*length));
+    double pi=Math.acos(-1);
+    double a1=(double)length*width;
+    double a2=pi*radious*radious;
+    a1=(double)(a1-a2);
+   System.out.printf("%.2f %.2f\n",a2,a1);
+   
+   }
+ 
+  }
+  }
+
+
+  
+
+
+
+
