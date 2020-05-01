@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.lang.*; 
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  int num;
+ while((num=sc.nextInt())!=0)
+ {
+ 
+  StringBuilder input1 = new StringBuilder(); 
+  int parity=0;
+  int rem;
+  while(num>0)
+ {
+  rem=num%2;
+  num=num/2;
+  if(rem==1)
+   parity++;
+ input1.append(rem);
+    
+  
+ }
+  System.out.println("The parity of "+input1.reverse()+" is "+parity+" (mod 2).");
+   
+  
+  
+ }
+  
+ 
+  }
+  }
+
+
+  
+
+
+
+
