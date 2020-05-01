@@ -1,0 +1,48 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  
+  int count=sc.nextInt();
+ int[]arr=new int[3];
+  for(int i=1;i<=count;i++)
+  {
+   int a=sc.nextInt();
+   int b=sc.nextInt();
+   int c=sc.nextInt();
+   int d=sc.nextInt();
+    a=a+b+c+d;
+   arr[0]=sc.nextInt();
+    arr[1]=sc.nextInt();
+    arr[2]=sc.nextInt();
+     Arrays.sort(arr);
+     float avg=((arr[1]+arr[2])/(float)2);
+   float marks=a+avg;
+   
+   if(marks>=90)
+  System.out.println("Case "+i+": "+"A");
+ else  if(marks>=80)
+  System.out.println("Case "+i+": "+"B");
+  else  if(marks>=70)
+  System.out.println("Case "+i+": "+"C");
+   else  if(marks>=60)
+  System.out.println("Case "+i+": "+"D");
+    else
+  System.out.println("Case "+i+": "+"F");
+   
+   }
+ 
+  }
+  }
+
+
+  
+
+
+
+
