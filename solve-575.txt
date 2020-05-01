@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  String  num;
+ while(!((num=sc.nextLine()).equals("0")))
+ {
+ int si=num.length();
+ int siz=si;
+ int skew=0;
+ for(int i=0;i<si;i++,siz--)
+ {
+   
+ skew+=((num.charAt(i)-48)*(int)((Math.pow(2,siz))-1));
+   
+ }
+  System.out.println((skew));
+ }
+  
+ 
+  }
+  }
+
+
+  
+
+
+
+
