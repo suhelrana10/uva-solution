@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  
+  byte count=sc.nextByte();
+  byte i;
+  for(i=1;i<=count;i++)
+  {
+   byte counter=sc.nextByte();
+   byte a=sc.nextByte();
+   byte jumps=0;
+   byte ljumps=0;
+   for(byte j=1;j<counter;j++)
+      {
+    byte b=sc.nextByte();
+    if(a>b)
+    ljumps++;
+    else if(a<b)
+       jumps++;
+      a=b;      
+   
+  }
+   System.out.println("Case "+i+": "+jumps+" "+ljumps);
+  }
+  
+  }
+  }
+
+
+  
+
+
+
+
