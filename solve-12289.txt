@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class Main{
+
+
+  public static void main(String[] args)
+{
+
+  Scanner sc=new Scanner(System.in);
+  
+  byte count=sc.nextByte();
+   sc.nextLine();
+  for(byte i=0;i<count;i++)
+  {
+ 
+String num=sc.nextLine();
+if(num.length()==3)
+{
+  if(((num.startsWith("on") ||num.endsWith("ne")))||((num.startsWith("o")&&num.endsWith("e"))))
+    System.out.println("1");
+  else  
+    System.out.println("2");
+                     } 
+  
+  else
+  {
+   System.out.println("3");
+  
+  }
+  
+  }
+  }
+}
+  
+
+
+
+
