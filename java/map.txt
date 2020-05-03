@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+
+
+Scanner sc=new Scanner(System.in);
+TreeMap<String,String> map=new TreeMap<String,String>();
+
+map.put("abf","nahid");
+map.put("ae","karim");
+map.put("an","lima");
+map.put("abc","karim");
+//map.remove("abf");
+//map.clear();
+//map.size();
+
+ for (String i : map.keySet()) {
+      System.out.println(map.get(i));
+    }
+ for (String j : map.values()) {
+      System.out.println(j);
+    }
+
+
+System.out.println(map.size());
+
+
+    }
+}
